@@ -19,6 +19,6 @@ export const RECIPE = {
     'Mix',
     'Melt a little butter in the pan',
     'Drop batter by tablespoon into the pan',
-    'Turn pancakes over when the top is full of little holes and teh base is golden',
+    'Turn pancakes over when the top is full of little holes and the base is golden',
   ],
 }
