@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* a way to underline whenever you are at a page thanks to the active navlink */
+nav a.active {
+    font-weight:800;
+    text-decoration: underline;
+}
+
