@@ -10,6 +10,7 @@ const NavBar = () => {
             <NavLink to="/" className={classes}> Buttons</NavLink>
             <NavLink to="/accordion" className={classes}> Accordion</NavLink>
             <NavLink to="/modal" className={classes}> Modal</NavLink>
+            <NavLink to="/inputgroup" className={classes}> Input Group</NavLink>
         </nav>
     )
 }

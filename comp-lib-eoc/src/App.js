@@ -4,6 +4,7 @@ import ButtonPage from './pages/ButtonPage'
 import AccordionPage from './pages/AccordionPage'
 import ModalPage from './pages/ModalPage'
 import NavBar from './components/NavBar'
+import Inputgroup from './pages/InputgroupPage'
 
 // IMPORTANT: Path here does not take a / before the route name
 export default function App() {
@@ -15,6 +16,9 @@ export default function App() {
           <Route path='/' element={<ButtonPage/>}/>
           <Route path='accordion' element={<AccordionPage/>}/>
           <Route path='modal' element ={<ModalPage/>}/>
+          <Route path='inputgroup' element ={<Inputgroup/>}/>
+
+
         </Routes>
       </div>
     </div>
