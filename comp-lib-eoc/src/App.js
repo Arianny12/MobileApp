@@ -18,7 +18,6 @@ export default function App() {
           <Route path='modal' element ={<ModalPage/>}/>
           <Route path='inputgroup' element ={<Inputgroup/>}/>
 
-
         </Routes>
       </div>
     </div>
