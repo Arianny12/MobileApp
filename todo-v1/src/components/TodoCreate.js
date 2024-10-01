@@ -1,8 +1,8 @@
-import { useState } from "react"
+import {useState} from 'react'
 const TodoCreate = (props) => {
     const {onCreate} = props
-    const [title,setTitle] = useState('')
-    
+    const [title, setTitle] = useState('')
+
     const handleChange = (event) => {
         setTitle(event.target.value)
     }
@@ -14,10 +14,10 @@ const TodoCreate = (props) => {
         setTitle('')
     }
     return(
-        <form onSubmit = {handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <label>Title:</label>
-            <input type="text" onChange ={handleChange} value={title}/>
-            <button> Add Todo </button>
+            <input type="text" onChange={handleChange} value={title} />
+            <button>Add Todo</button>
         </form>
     )
 }
