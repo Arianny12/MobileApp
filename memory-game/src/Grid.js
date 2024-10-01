@@ -52,7 +52,7 @@ export default function Grid(props) {
 
   }
   useEffect(() => {
-    //thia is where we compare, first we make sure we have both choice
+    //this is where we compare, first we make sure we have both choice
     if (choiceOne && choiceTwo) {
       //comapre src in each card to see if they match
         if (choiceOne.src === choiceTwo.src) {
@@ -108,8 +108,6 @@ const resetTurn = () =>{
 export function Card(props) {
   const {card, handleChoice, flipped} = props
   //keep track of flippled/active in state
-  const [isActive,setIsActive] = useState(false)
-
   const handleClick = (event) =>{
     //toggle active state
     handleChoice(card)

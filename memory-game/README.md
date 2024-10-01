@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+WEEK 4 HOMEWORK:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To-Do List App for Payment and Finance Management
 
-## Available Scripts
+User Story:  
+As a person managing multiple bills, subscriptions, and financial obligations, I want a to-do list app that helps me track payment due dates, subscription renewals, and manage debt repayments, so that I can avoid missed payments, stay organized with my finances, and reduce financial stress.
 
-In the project directory, you can run:
 
-### `npm start`
+Feature: 
+Payment Due Date Tracker & Subscription Manager
+The app should allow users to set reminders for recurring payments (such as utilities, rent, credit card bills, etc) and monitor their subscriptions (such as netflix, disney, etc). It should also allow users to manage payment methods and track debt repayments. This feature will help users avoid late fees, and monitor their recurring expenses.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Audience: 
+- People who have multiple bills, loans, or recurring payments.
+- People who work a lot of hours, who may find it hard to keep track of their finances.
+- People with multiple subscriptions who want to manage renewals and cancellations.
+- Anyone dealing with debt repayments, who needs a way to stay on top of payments and track their progress all in one space.
+- Younger generation or recent graduates who are starting to manage their own finances.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
