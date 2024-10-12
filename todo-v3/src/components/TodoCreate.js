@@ -1,24 +1,28 @@
 import {useState} from 'react'
-const TodoCreate = (props) => {
-    const {onCreate} = props
-    const [title, setTitle] = useState('')
+import useTodoContext from '../hooks/use-todo-context'
 
-    const handleChange = (event) => {
-        setTitle(event.target.value)
-    }
-    const handleSubmit = (event) => {
-        //make sure the form doesnt refresh the page
-        event.preventDefault()
-        onCreate(title)
-        //clear out the form
-        setTitle('')
-    }
-    return(
-        <form onSubmit={handleSubmit}>
-            <label>Title:</label>
-            <input type="text" onChange={handleChange} value={title} />
-            <button>Add Todo</button>
-        </form>
-    )
+const TodoCreate = () => {
+  const {createTodo} = useTodoContext()
+
+  const [title, setTitle] = useState('')
+
+  const handleChange = (event) => {
+    setTitle(event.target.value)
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    createTodo(title)
+    setTitle('')
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>Title:</label>
+      <input type="text" onChange={handleChange} value={title} />=
+      <button>Add Todo</button>
+    </form>
+  )
 }
+
 export default TodoCreate

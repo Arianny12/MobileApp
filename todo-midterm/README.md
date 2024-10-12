@@ -1,6 +1,7 @@
-WEEK 4 HOMEWORK:
-
 To-Do List App to Manage Finances
+Google slides: 
+https://docs.google.com/presentation/d/12QO7W5KWtxFNOowXrCRPsc1HSB0PR6b3gzTvLmoas0g/edit?usp=sharing 
+
 
 Homework #4
 User Story:
@@ -13,4 +14,3 @@ People who have multiple bills, loans, or recurring payments.
 People who work a lot of hours, who may find it hard to keep track of their finances.
 Anyone dealing with debt repayments, who needs a way to stay on top of payments and track their progress all in one space.
 Younger generation or recent graduates who are starting to manage their own finances.
-

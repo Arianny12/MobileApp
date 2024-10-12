@@ -1,5 +1,6 @@
 import axios from 'axios'
 import {createContext, useState, useCallback} from 'react'
+
 const TodoContext = createContext()
 
 function Provider({children}) {
@@ -10,16 +11,41 @@ function Provider({children}) {
     setTodos(response.data)
   }, [])
 
-
-  const createTodo = async (title) => {
-    const response = await axios.post('http://localhost:3001/todos', {title})
+  const createTodo = async ({title, dueDate, type, amount, recurring}) => {
+    const response = await axios.post('http://localhost:3001/todos', {
+      title,
+      dueDate,
+      type,
+      amount,
+      recurring,
+      completed: false, 
+      // show "incomplete" when creating a new todo
+    })
     const updatedTodos = [...todos, response.data]
     setTodos(updatedTodos)
   }
 
-  const editTodoById = async (id, newTitle) => {
+  const toggleTodoCompletedById = async (id, completed) => {
     const response = await axios.put(`http://localhost:3001/todos/${id}`, {
-      title: newTitle,
+      completed: !completed,
+    })
+
+    const updatedTodos = todos.map((todo) => {
+      if (todo.id === id) {
+        return {...todo, ...response.data}
+      }
+      return todo
+    })
+    setTodos(updatedTodos)
+  }
+
+  const editTodoById = async (id, {title, dueDate, type, amount, recurring}) => {
+    const response = await axios.put(`http://localhost:3001/todos/${id}`, {
+      title,
+      dueDate,
+      type,
+      amount,
+      recurring,
     })
 
     const updatedTodos = todos.map((todo) => {
@@ -33,11 +59,7 @@ function Provider({children}) {
 
   const deleteTodoById = async (id) => {
     await axios.delete(`http://localhost:3001/todos/${id}`)
-
-    const updatedTodos = todos.filter((todo) => {
-      return todo.id !== id
-    })
-
+    const updatedTodos = todos.filter((todo) => todo.id !== id)
     setTodos(updatedTodos)
   }
 
@@ -45,6 +67,7 @@ function Provider({children}) {
     todos,
     fetchTodos,
     createTodo,
+    toggleTodoCompletedById,
     editTodoById,
     deleteTodoById,
   }
@@ -58,6 +81,3 @@ function Provider({children}) {
 
 export {Provider}
 export default TodoContext
-
-// import both in the same file
-// import TodoContext, {Provider} from './*'

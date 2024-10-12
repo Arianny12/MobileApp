@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {Provider} from './context/Todos'
 import App from './App'
+import './global.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -9,3 +10,4 @@ root.render(
     <App />
   </Provider>
 )
+
